@@ -1,0 +1,7 @@
+Developed an advanced system for classifying music genres and detecting emotions from audio using deep learning techniques. The project utilized spectrogram and chromagram features extracted from the Free Music Archive (FMA) dataset. To address the challenge of long temporal dependencies in the data, beat-synced spectrograms were employed, significantly reducing the number of time steps required for training.
+
+Two deep learning architectures, LSTM and CNN, were implemented and evaluated for their effectiveness in handling the temporal and spectral information inherent in music data. The models were trained and tested on multiple music genres such as Blues, Trip-Hop, and others, with the CNN showing superior performance in classification tasks, particularly when combined with beat-synced features.
+
+Additionally, multitask learning was applied to predict multiple emotional axes such as valence, energy, and danceability. This approach led to significant improvements in the model's ability to generalize across tasks, as evidenced by a notable increase in the Spearman Correlation scores for each emotional dimension. The system's performance was further enhanced by leveraging Adam optimizer, dropout regularization, and early stopping to prevent overfitting and improve model robustness.
+
+The final model was thoroughly evaluated using precision, recall, and F1 score metrics, and demonstrated strong performance, with the CNN architecture achieving the best overall accuracy for both genre classification and emotion prediction.
